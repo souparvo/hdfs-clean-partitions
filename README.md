@@ -1,6 +1,8 @@
 # hdfs-clean-partitions
 
-Script to clean malformed partitions from HDFS. For each table selected 
+Script to clean malformed partitions from Hive tables deleting the HDFS path. 
+
+A table repair is recommended after the running of the script.
 
 ## Execution and configuration file
 
@@ -43,3 +45,4 @@ With this configuration file the script will check the tables on the schemas:
 
 - [ ] Use WebHDFS instead of CLI
 - [ ] Support for multiple partition columns on table (granularity to inner partitions)
+- [ ] Supoort for non time based partitions
