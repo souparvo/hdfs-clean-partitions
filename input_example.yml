@@ -1,0 +1,17 @@
+
+hive_hdfs_path: /apps/hive/warehouse # for Hive 1.2 is the default path
+
+tables:
+  - schema: schema_name
+    tables: 
+      - table_name1
+      - table_2
+
+    part_col: partition_column
+    format: "%Y-%m-%d" # partition column format
+  - schema: other_schema
+    tables: 
+      - table_on_other_schema
+
+    part_col: partition
+    format: "%Y%m%d"
